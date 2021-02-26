@@ -134,6 +134,8 @@
 }
 
 .two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
   font-weight: bold;
 }
 /* Description Section */
@@ -191,7 +193,7 @@
 .table__cell {
   width: 250px;
   text-align: left;
-  margin: 60px 0 0 0 ;
+  margin: 60px 0 0 0;
 }
 
 .table__heading {
@@ -392,8 +394,6 @@
 }
 
 .footer__column-links {
-  text-decoration: none;
-  color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -405,9 +405,6 @@
   flex-wrap: wrap;
   text-decoration: none;
   color: white;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .footer__column_content_info {
