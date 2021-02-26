@@ -140,10 +140,10 @@
 
 /* Digits Section */
 .digits {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
 }
 
 .digits_place_main {
@@ -283,7 +283,6 @@
   position: relative;
   overflow: hidden;
   padding: 90px 0 90px 0;
-  /* width: 100%; */
 }
 
 .section-title_theme_dark {
