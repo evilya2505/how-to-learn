@@ -19,6 +19,7 @@
   flex-wrap: wrap;
   justify-content: start;
   position: relative;
+  z-index: 1;
 }
 
 .header__title {
@@ -26,7 +27,6 @@
   margin: 0 0 0 64px;
   padding: 0;
   align-self: center;
-  z-index: 2;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
@@ -40,7 +40,6 @@
   position: absolute;
   bottom: 30px;
   left: 64px;
-  z-index: 2;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -49,6 +48,10 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover{
+  text-decoration: underline;
 }
 
 .header__link:visited {
@@ -61,7 +64,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: -1;
 }
 
 .header__square-pic {
@@ -71,7 +74,7 @@
   position: absolute;
   top: 64px;
   right: 0;
-  z-index: 0;
+  z-index: -2;
 }
 
 .logo {
@@ -89,13 +92,23 @@
 }
 /* Header Section */
 
+/* Main Section */
+.content__description {
+  margin: 100px 0 0;
+}
+
+.content__digits {
+  margin: 100px 0 0;
+}
+
+.content__feynman {
+  margin: 100px 0 0;
+}
+/* Main Section */
+
 /* Description Section */
 .description {
   width: 100%;
-}
-
-.description_place_main {
-  margin: 100px auto 0;
 }
 
 .two-columns {
@@ -148,10 +161,6 @@
   justify-content: center;
 }
 
-.digits_place_main {
-  margin: 100px 0 0;
-}
-
 .section-title {
   width: 60%;
   margin: 0;
@@ -163,7 +172,7 @@
   z-index: 1;
 }
 
-.section-title_place_main {
+.digits__section-title {
   margin: 0 0 20px;
 }
 
@@ -180,20 +189,19 @@
 
 .table {
   width: 1100px;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style: none;
   z-index: 1;
 }
 
-.table_place_main  {
-  margin: 0 auto;
-}
-
 .table__cell {
+  margin: 60px 0 0 0;
   width: 250px;
   text-align: left;
-  margin: 60px 0 0 0;
 }
 
 .table__heading {
@@ -203,6 +211,7 @@
   font-size: 24px;
   font-weight: bold;
 }
+
 .table__text {
   padding: 0;
   margin: 20px 0 0 0;
@@ -215,15 +224,11 @@
 /* Feynman Section */
 .feynman {
   width: 100%;
-  height: 790px;
-  box-sizing: border-box;
+  min-height: 790px;
   background-color: #f2f2f2;
   position: relative;
-  padding-top: 100px;
-}
-
-.feynman_place_main {
-  margin: 100px 0 0;
+  padding: 100px 0 0;
+  z-index: 1;
 }
 
 .feynman__title {
@@ -235,7 +240,6 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  z-index: 1;
 }
 
 .feynman__subtitle {
@@ -246,7 +250,6 @@
   line-height:51px;
   font-size: 36px;
   font-weight: normal;
-  z-index: 1;
 }
 
 .feynman__link {
@@ -259,7 +262,10 @@
   line-height:51px;
   font-size: 36px;
   font-weight: normal;
-  z-index: 1;
+}
+
+.feynman__link:hover{
+  text-decoration: underline;
 }
 
 .feynman__link:visited {
@@ -271,7 +277,7 @@
   height: 637px;
   position: absolute;
   bottom: 0;
-  z-index: 0;
+  z-index: -1;
 }
 /* Feynman Section */
 
@@ -285,56 +291,26 @@
   position: relative;
   overflow: hidden;
   padding: 90px 0 90px 0;
+  z-index: 1;
 }
 
 .section-title_theme_dark {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 20px;
   color: white;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
-  margin: 0;
-  padding: 0;
   color: white;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  z-index: 1;
 }
 
 .table_theme_dark {
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 
 .table__cell_theme_dark {
   width: 200px;
+  margin: 80px 0 0;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
-  z-index: 1;
-}
-
-.table__heading_theme_dark {
-  margin: 0;
-  padding: 0;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-  z-index: 1;
-}
-
-.table__text_theme_dark {
-  margin: 20px 0 0 0;
-  padding: 0;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  z-index: 1;
 }
 
 .kaufman__trianlge {
@@ -343,9 +319,9 @@
   background-image: url(../images/kaufman-triangle.svg);
   background-size: contain;
   position: absolute;
-  top:0;
+  top: 0px;
   right: -210px;
-  z-index: 0;
+  z-index: -1;
 }
 
 
@@ -354,7 +330,6 @@
 /* Footer Section */
 .footer {
   width: 100%;
-  height: 1px;
   min-height: 350px;
   background-color:#1f1f1f;
   box-sizing: border-box;
@@ -364,7 +339,7 @@
 
  .footer__columns {
   width: 90%;
-  min-height: 100%;
+  min-height: 250px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -389,11 +364,13 @@
 }
 
 .footer__column_content_social {
-  margin: 20px 0 16px 0;
+  margin: 20px 0 16px;
   margin: 0;
 }
 
 .footer__column-links {
+  padding: 0;
+  list-style: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -407,6 +384,10 @@
   color: white;
 }
 
+.footer__column-link:hover{
+  text-decoration: underline;
+}
+
 .footer__column_content_info {
   margin: 0;
 }
@@ -418,7 +399,6 @@
   height: 16px;
 }
 
-
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
   background-size: cover;
@@ -427,7 +407,7 @@
 
 .footer__author {
   width: 100%;
-  margin: 18px 0 18px 0;
+  margin: 18px 0;
   padding: 0;
   color: white;
   line-height: 25px;
