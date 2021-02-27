@@ -33,7 +33,7 @@
 }
 
 .header__subtitle {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   width: 388px;
   align-self: flex-end;
@@ -324,7 +324,6 @@
   z-index: -1;
 }
 
-
 /* Kaufman Section */
 
 /* Footer Section */
@@ -374,7 +373,6 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  list-style: none;
 }
 
 .footer__column-link {
