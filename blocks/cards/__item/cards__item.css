@@ -1,0 +1,8 @@
+.cards__item {
+    width: 240px;
+    margin-top: 60px;
+  }
+
+  .cards__item:not(:nth-of-type(3n)) {
+    margin: 60px 100px 0 0;
+  }

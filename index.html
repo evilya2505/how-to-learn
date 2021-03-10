@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Как научиться учиться">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="pages/index.css">
   <title>Научиться учиться</title>
 </head>
 <body>
@@ -18,7 +17,7 @@
           обучению вы можете использовать в своей жизни?
         <a class="header__link" href="#"> Узнать &rarr;</a></p>
         <img src="images/header-image.png" alt="изображение шапка" class="header__main-illustration">
-        <div class="header__square-pic"></div>
+        <div class="header__square-pic rotation"></div>
     </header>
     <!-- Header Section -->
 
@@ -36,6 +35,71 @@
         </article>
       </section>
       <!-- Description Section -->
+
+      <!-- Techniques Section -->
+      <section class="techniques content__techniques">
+        <h2 class="section-title techniques__section-title">Техники обучения</h2>
+        <p class="section-subtitle techniques__section-subtitle">Пять практик от Барбары Оакли</p>
+        <ul class="cards techniques__cards">
+          <li class="cards__item">
+            <img src="images/cards-attention.png" alt="два вида внимания изображение" class="cards__image">
+            <h3 class="cards__title">Два вида внимания</h3>
+            <p class="cards__description">Глубоки знания возникают, если чередовать сфокусированное и рассеянное мышление</p>
+          </li>
+          <li class="cards__item">
+            <img src="images/cards-recall.png" alt="recall изображение" class="cards__image">
+            <h3 class="cards__title">Recall</h3>
+            <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+          </li>
+          <li class="cards__item">
+            <img src="images/cards-interliving.png" alt="интерливинг изображение" class="cards__image">
+            <h3 class="cards__title">Интерливинг</h3>
+            <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+          </li>
+          <li class="cards__item">
+            <img src="images/cards-question.png" alt="вопросы изображение" class="cards__image">
+            <h3 class="cards__title">Вопросы</h3>
+            <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+          </li>
+          <li class="cards__item">
+            <img src="images/cards-competence.png" alt="иллюзия компетентности изображение" class="cards__image">
+            <h3 class="cards__title">Иллюзия компетентности</h3>
+            <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+          </li>
+        </ul>
+      </section>
+      <!-- Techniques Section -->
+
+      <!-- Video Section -->
+      <section class="video content__video">
+        <h2 class="section-title video__section-title">Видео на TED</h2>
+        <p class="section-subtitle video__section-subtitle">Для тех, кто любит прокрастинировать</p>
+        <div class="video__iframes">
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
+        </div>
+      </section>
+      <!-- Video Section -->
+
+      <!-- Oakley Section -->
+      <section class="oakley content__oakley">
+        <article class="two-columns">
+          <h2 class="two-columns__brief">История Барбары Оакли.</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">С детства Барбаре не давалась математика. Она считала себя законченным гуманитарием, причём далеко не самым умным. В армии она изучала русский язык, чтобы получить надбавку, да так успешно, что её выдвинули в командиры. Но для продвижения по службе нужно было сдавать математику. И тогда Барбара придумала свой подход к точным наукам. Оказалось, если вам что-то «плохо даётся», ваши добытые трудом знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.</p>
+          </div>
+        </article>
+      </section>
+      <!-- Oakley Section -->
+
+      <!-- Feynman Section -->
+      <section class="feynman content__feynman">
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <p class="feynman__subtitle">Выучить и не забыть</p>
+        <a href="" class="feynman__link">Подробнее &rarr;</a>
+        <img src="images/feynman.png" alt="изображение Фейнмана" class="feynman__img">
+      </section>
+      <!-- Feynman Section -->
 
       <!-- Digits Section -->
       <section class="digits content__digits">
@@ -81,14 +145,21 @@
       </section>
       <!-- Digits Section -->
 
-      <!-- Feynman Section -->
-      <section class="feynman content__feynman">
-        <h2 class="feynman__title">Метод Фейнмана</h2>
-        <p class="feynman__subtitle">Выучить и не забыть</p>
-        <a href="" class="feynman__link">Подробнее &rarr;</a>
-        <img src="images/feynman.png" alt="изображение Фейнмана" class="feynman__img">
+      <!-- Khan Section -->
+      <section class="khan content__khan">
+        <div class="khan__container">
+          <p class="khan__author">Салман Хан</p>
+          <h2 class="khan__title">Весь мир - школа</h2>
+          <blockquote cite="" class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
+          <p class="khan__quote-author">Джордж Лукас</p>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+          <div class="khan__book-container">
+            <img src="images/khan-book.jpg" alt="изображение обложки книги" class="khan__book-pic">
+            <a href="" class="khan__buy-link">Купить книгу&rarr;</a>
+          </div>
+        </div>
       </section>
-      <!-- Feynman Section -->
+      <!-- Khan Section -->
 
       <!-- Kaufman Section -->
       <section class="kaufman">
@@ -136,9 +207,22 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
-        <div class="kaufman__trianlge"></div>
+        <div class="kaufman__trianlge rotation"></div>
       </section>
       <!-- Kaufman Section -->
+
+      <!-- Resources Section -->
+      <section class="resources content__resources">
+        <h2 class="section-title resources__section-title">Полезные ресурсы</h2>
+        <p class="section-subtitle resources__section-subtitle">Больше материалов о техниках и лайфхаков обучения</p>
+        <div class="resources__logo-zone">
+          <img src="images/resources-arzamas.svg" alt="изображение логотипа arzamas" class="resources__logo">
+          <img src="images/resources-n1.svg" alt="изображение логотипа n+1" class="resources__logo">
+          <img src="images/resources-strelka.svg" alt="изображение логотипа strelka" class="resources__logo">
+          <img src="images/resources-polka.svg" alt="изображение логотипа полка" class="resources__logo">
+        </div>
+      </section>
+      <!-- Resources Section -->
     </main>
     <!-- Main Section -->
 
