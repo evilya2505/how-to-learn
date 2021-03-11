@@ -4,6 +4,6 @@
 }
 
 .logo:hover {
-transition: opacity .5s linear 0s;
-opacity: .6;
+  transition: opacity .5s linear 0s;
+  opacity: .6;
 }
