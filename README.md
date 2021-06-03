@@ -8,4 +8,4 @@
 
 ## GitHub Pages
 
-* [Ссылка на GitHub Pages](https://evilya2505.github.io/mesto/)
+* [Ссылка на GitHub Pages](https://evilya2505.github.io/how-to-learn/)
