@@ -5,3 +5,7 @@
 ## Технологии
 1. HTML
 2. CSS
+
+## GitHub Pages
+
+* [Ссылка на GitHub Pages](https://evilya2505.github.io/mesto/)
